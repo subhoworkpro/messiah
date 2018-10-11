@@ -84,6 +84,7 @@ module.exports = function(apiRoutes) {
       "details": "Donate new and gently used sports equipment and give someone the opportunity to train and play sports properly",
       "donation_raised": "1000",
       "donation_target" : "10000",
+      "image": "",
       "end_date": "31-12-2018",
       "address": {
         "street": "Kulas Light",
@@ -160,6 +161,8 @@ module.exports = function(apiRoutes) {
     // User.find({}, function(err, users) {
     //   res.json(users);
     // });
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     res.json(campaigns);
   }); 
 
