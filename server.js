@@ -19,7 +19,7 @@ var jwt    = require('jsonwebtoken'); // used to create, sign, and verify tokens
 var config = require('./config'); // get our config file
 // var User   = require('./api/models/user'); // get our mongoose model
 
-var port = process.env.PORT || 9000;
+var port = process.env.PORT || 8000;
 // mongoose.connect(config.database, { useMongoClient: true }); // connect to database
 // app.set('superSecret', config.secret); // secret variable
 
