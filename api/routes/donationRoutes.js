@@ -78,7 +78,7 @@ module.exports = function(apiRoutes) {
 
   // var CryptoJS = require("crypto-js");
 
-  var users = [{
+  var donations = [{
       "id": 1,
       "name": "Leanne Graham",
       "username": "Bret",
@@ -107,11 +107,11 @@ module.exports = function(apiRoutes) {
   ];
 
   // route to return all users (GET http://localhost:8080/api/users)
-  apiRoutes.get('/users', function(req, res) {
+  apiRoutes.get('/donations', function(req, res) {
     // User.find({}, function(err, users) {
     //   res.json(users);
     // });
-    res.json(users);
+    res.json(donations);
   }); 
 
 };
