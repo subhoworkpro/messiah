@@ -97,7 +97,7 @@ module.exports = function(apiRoutes) {
       "id": 2,
       "name": "KALUDIGHI PRIMARY SCHOOL",
       "details": "Help me give my students combination padlocks and storage containers to help us unlock learning through a modified escape room.",
-      "donation_raised": "1000",
+      "donation_raised": "3000",
       "donation_target" : "10000",
       "end_date": "31-12-2018",
       "address": {
@@ -112,7 +112,7 @@ module.exports = function(apiRoutes) {
       "id": 3,
       "name": "Monoharpur Muchia Pry. School",
       "details": "Donate new and gently used sports equipment and give someone the opportunity to train and play sports properly",
-      "donation_raised": "1000",
+      "donation_raised": "2500",
       "donation_target" : "10000",
       "end_date": "31-12-2018",
       "address": {
@@ -127,7 +127,7 @@ module.exports = function(apiRoutes) {
       "id": 4,
       "name": "KAILASH PUR PRY SCHOOL",
       "details": "Help me give my students combination padlocks and storage containers to help us unlock learning through a modified escape room.",
-      "donation_raised": "1000",
+      "donation_raised": "6000",
       "donation_target" : "10000",
       "end_date": "31-12-2018",
       "address": {
@@ -142,7 +142,7 @@ module.exports = function(apiRoutes) {
       "id": 5,
       "name": "LAXMIPUR PRY SCHOOL SOUTH",
       "details": "Donate new and gently used sports equipment and give someone the opportunity to train and play sports properly",
-      "donation_raised": "1000",
+      "donation_raised": "7800",
       "donation_target" : "10000",
       "end_date": "31-12-2018",
       "address": {
