@@ -80,9 +80,11 @@ module.exports = function(apiRoutes) {
 
   var campaigns = [{
       "id": 1,
-      "name": "Leanne Graham",
-      "username": "Bret",
-      "email": "Sincere@april.biz",
+      "name": "BAG MALANCHA PRY SCHOOL",
+      "details": "Donate new and gently used sports equipment and give someone the opportunity to train and play sports properly",
+      "donation_raised": "1000",
+      "donation_target" : "10000",
+      "end_date": "31-12-2018",
       "address": {
         "street": "Kulas Light",
         "suite": "Apt. 556",
@@ -93,9 +95,56 @@ module.exports = function(apiRoutes) {
     },
     {
       "id": 2,
-      "name": "Ervin Howell",
-      "username": "Antonette",
-      "email": "Shanna@melissa.tv",
+      "name": "KALUDIGHI PRIMARY SCHOOL",
+      "details": "Help me give my students combination padlocks and storage containers to help us unlock learning through a modified escape room.",
+      "donation_raised": "1000",
+      "donation_target" : "10000",
+      "end_date": "31-12-2018",
+      "address": {
+        "street": "Victor Plains",
+        "suite": "Suite 879",
+        "city": "Wisokyburgh",
+        "zipcode": "7000102"
+      },
+      "phone": "+91-692-593-9125"
+    },
+    {
+      "id": 3,
+      "name": "Monoharpur Muchia Pry. School",
+      "details": "Donate new and gently used sports equipment and give someone the opportunity to train and play sports properly",
+      "donation_raised": "1000",
+      "donation_target" : "10000",
+      "end_date": "31-12-2018",
+      "address": {
+        "street": "Victor Plains",
+        "suite": "Suite 879",
+        "city": "Wisokyburgh",
+        "zipcode": "7000102"
+      },
+      "phone": "+91-692-593-9125"
+    },
+    {
+      "id": 4,
+      "name": "KAILASH PUR PRY SCHOOL",
+      "details": "Help me give my students combination padlocks and storage containers to help us unlock learning through a modified escape room.",
+      "donation_raised": "1000",
+      "donation_target" : "10000",
+      "end_date": "31-12-2018",
+      "address": {
+        "street": "Victor Plains",
+        "suite": "Suite 879",
+        "city": "Wisokyburgh",
+        "zipcode": "7000102"
+      },
+      "phone": "+91-692-593-9125"
+    },
+    {
+      "id": 5,
+      "name": "LAXMIPUR PRY SCHOOL SOUTH",
+      "details": "Donate new and gently used sports equipment and give someone the opportunity to train and play sports properly",
+      "donation_raised": "1000",
+      "donation_target" : "10000",
+      "end_date": "31-12-2018",
       "address": {
         "street": "Victor Plains",
         "suite": "Suite 879",
