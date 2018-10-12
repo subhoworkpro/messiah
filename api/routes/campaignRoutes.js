@@ -81,6 +81,7 @@ module.exports = function(apiRoutes) {
   var campaigns = [{
       "id": 1,
       "name": "BAG MALANCHA PRY SCHOOL",
+      "image_url": "https://res.cloudinary.com/intellirio-consultancy-and-labs-llp/image/upload/v1539319305/s1_ks4nla.jpg",
       "details": "Donate new and gently used sports equipment and give someone the opportunity to train and play sports properly",
       "donation_raised": "1000",
       "donation_target" : "10000",
@@ -97,6 +98,7 @@ module.exports = function(apiRoutes) {
     {
       "id": 2,
       "name": "KALUDIGHI PRIMARY SCHOOL",
+      "image_url": "https://res.cloudinary.com/intellirio-consultancy-and-labs-llp/image/upload/v1539319303/s3_ipqi7z.jpg",
       "details": "Help me give my students combination padlocks and storage containers to help us unlock learning through a modified escape room.",
       "donation_raised": "3000",
       "donation_target" : "10000",
@@ -112,6 +114,7 @@ module.exports = function(apiRoutes) {
     {
       "id": 3,
       "name": "Monoharpur Muchia Pry. School",
+      "image_url": "https://res.cloudinary.com/intellirio-consultancy-and-labs-llp/image/upload/v1539319303/s5_fcfa7u.jpg",
       "details": "Donate new and gently used sports equipment and give someone the opportunity to train and play sports properly",
       "donation_raised": "2500",
       "donation_target" : "10000",
@@ -127,6 +130,7 @@ module.exports = function(apiRoutes) {
     {
       "id": 4,
       "name": "KAILASH PUR PRY SCHOOL",
+      "image_url": "https://res.cloudinary.com/intellirio-consultancy-and-labs-llp/image/upload/v1539319567/s4_fe5i2i.jpg",
       "details": "Help me give my students combination padlocks and storage containers to help us unlock learning through a modified escape room.",
       "donation_raised": "6000",
       "donation_target" : "10000",
@@ -142,6 +146,7 @@ module.exports = function(apiRoutes) {
     {
       "id": 5,
       "name": "LAXMIPUR PRY SCHOOL SOUTH",
+      "image_url": "https://res.cloudinary.com/intellirio-consultancy-and-labs-llp/image/upload/v1539319512/s2_qu4tzm.jpg",
       "details": "Donate new and gently used sports equipment and give someone the opportunity to train and play sports properly",
       "donation_raised": "7800",
       "donation_target" : "10000",

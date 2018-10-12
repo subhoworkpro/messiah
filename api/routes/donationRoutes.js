@@ -80,29 +80,67 @@ module.exports = function(apiRoutes) {
 
   var donations = [{
       "id": 1,
-      "name": "Leanne Graham",
-      "username": "Bret",
-      "email": "Sincere@april.biz",
+      "transaction_id": "9876545",
+      "amount": "900",
+      "approval_code": "12232",
+      "transaction_date": "Dec 12 2018 11:00 am",
+      "campaign_name": "KAILASH PUR PRY SCHOOL",
+      "image_url": "https://res.cloudinary.com/intellirio-consultancy-and-labs-llp/image/upload/v1539319567/s4_fe5i2i.jpg",
       "address": {
         "street": "Kulas Light",
         "suite": "Apt. 556",
         "city": "Gwenborough",
         "zipcode": "700091"
       },
-      "phone": "+91-770-736-8031",
+      "user_id": 1
     },
     {
       "id": 2,
-      "name": "Ervin Howell",
-      "username": "Antonette",
-      "email": "Shanna@melissa.tv",
+      "transaction_id": "9876546",
+      "amount": "1000",
+      "approval_code": "12232",
+      "transaction_date": "Dec 14 2018 11:00 am",
+      "campaign_name": "LAXMIPUR PRY SCHOOL SOUTH",
+      "image_url": "https://res.cloudinary.com/intellirio-consultancy-and-labs-llp/image/upload/v1539319512/s2_qu4tzm.jpg",
       "address": {
-        "street": "Victor Plains",
-        "suite": "Suite 879",
-        "city": "Wisokyburgh",
-        "zipcode": "7000102"
+        "street": "Kulas Light",
+        "suite": "Apt. 556",
+        "city": "Gwenborough",
+        "zipcode": "700091"
       },
-      "phone": "+91-692-593-9125"
+      "user_id": 1
+    },
+    {
+      "id": 3,
+      "transaction_id": "9876547",
+      "amount": "900",
+      "approval_code": "12232",
+      "transaction_date": "Dec 15 2018 11:00 am",
+      "campaign_name": "BAG MALANCHA PRY SCHOOL",
+      "image_url": "https://res.cloudinary.com/intellirio-consultancy-and-labs-llp/image/upload/v1539319305/s1_ks4nla.jpg",
+      "address": {
+        "street": "Kulas Light",
+        "suite": "Apt. 556",
+        "city": "Gwenborough",
+        "zipcode": "700091"
+      },
+      "user_id": 1
+    },
+    {
+      "id": 4,
+      "transaction_id": "9876548",
+      "amount": "900",
+      "approval_code": "12232",
+      "transaction_date": "Dec 16 2018 11:00 am",
+      "campaign_name": "KALUDIGHI PRIMARY SCHOOL",
+      "image_url": "https://res.cloudinary.com/intellirio-consultancy-and-labs-llp/image/upload/v1539319303/s3_ipqi7z.jpg",
+      "address": {
+        "street": "Kulas Light",
+        "suite": "Apt. 556",
+        "city": "Gwenborough",
+        "zipcode": "700091"
+      },
+      "user_id": 1
     }
   ];
 
