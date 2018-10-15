@@ -87,6 +87,7 @@ module.exports = function(apiRoutes) {
       "donation_raised": "1000",
       "donation_target" : "10000",
       "end_date": "31-12-2018",
+      "donors": 300,
       "address": {
         "street": "Kulas Light",
         "suite": "Apt. 556",
