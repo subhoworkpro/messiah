@@ -86,7 +86,7 @@ module.exports = function(apiRoutes) {
       "story": "In order to move people to action, you must first connect them the problem your organization is trying to solve. Why is it so important that people act now and become supporters of your organization? That’s what EB Research Partnership aims to do with their 'Cause the Wave' campaign video. Dedicated to advancing treatments and finding a cure for children with Epidermoysis Bullosa, a debilitating and life-threatening skin disease, EBRP created this video to bring viewers up close and personal with three individuals living with EB. Their personalities shine through the video, creating a powerful emotional connection with viewers. Eddie Vedder of Pearl Jam, an EBRP board member, also shares his own story of how and why he adopted the cause as his own.",
       "donation_raised": "1000",
       "donation_target" : "10000",
-      "end_date": "31-12-2018",
+      "end_date": "31 Dec 2018 11:59 pm",
       "donors": 300,
       "address": {
         "street": "Kulas Light",
