@@ -117,10 +117,11 @@ module.exports = function(apiRoutes) {
   }); 
 
   // route to return all users (GET http://localhost:8080/api/users)
-  apiRoutes.get('/login', function(req, res) {
+  apiRoutes.post('/login', function(req, res) {
     // User.find({}, function(err, users) {
     //   res.json(users);
     // });
+    console.log(req.body);
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     res.json(users[0]);
