@@ -72,11 +72,11 @@
 
 module.exports = function(apiRoutes) {
 
-  // var User   = require('../models/user'); // get our mongoose model
-  // var jwt    = require('jsonwebtoken'); // used to create, sign, and verify tokens
-  // var config = require('../../config'); // get our config file
+  var User   = require('../models/user'); // get our mongoose model
+  var jwt    = require('jsonwebtoken'); // used to create, sign, and verify tokens
+  var config = require('../../config'); // get our config file
 
-  // var CryptoJS = require("crypto-js");
+  var CryptoJS = require("crypto-js");
 
   var users = [{
       "id": 1,
@@ -108,12 +108,14 @@ module.exports = function(apiRoutes) {
 
   // route to return all users (GET http://localhost:8080/api/users)
   apiRoutes.get('/users', function(req, res) {
-    // User.find({}, function(err, users) {
-    //   res.json(users);
-    // });
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    res.json(users[0]);
+    User.find({}, function(err, users) {
+      res.json(users[0]);
+    });
+    // res.header("Access-Control-Allow-Origin", "*");
+    // res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    // res.json(users[0]);
   }); 
 
   // route to return all users (GET http://localhost:8080/api/users)
