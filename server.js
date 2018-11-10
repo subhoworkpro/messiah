@@ -11,16 +11,17 @@ var apiRoutes = express.Router();
 
 var bodyParser  = require('body-parser');
 var morgan      = require('morgan');
-// var mongoose    = require('mongoose');
-// mongoose.Promise = global.Promise
+var mongoose    = require('mongoose');
+mongoose.Promise = global.Promise
 var CryptoJS = require("crypto-js");
 
 var jwt    = require('jsonwebtoken'); // used to create, sign, and verify tokens
 var config = require('./config'); // get our config file
 // var User   = require('./api/models/user'); // get our mongoose model
+var cors = require("cors");
 
 var port = process.env.PORT || 8000;
-// mongoose.connect(config.database, { useMongoClient: true }); // connect to database
+mongoose.connect(config.database, { useMongoClient: true }); // connect to database
 // app.set('superSecret', config.secret); // secret variable
 
 // // use body parser so we can get info from POST and/or URL parameters
@@ -139,5 +140,6 @@ app.use('/api', apiRoutes);
 
 
 app.listen(port);
+app.options('*', cors()); 
 
 console.log('Healthy Fling server started on: ' + port);
