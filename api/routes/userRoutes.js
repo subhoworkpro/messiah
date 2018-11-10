@@ -113,7 +113,7 @@ module.exports = function(apiRoutes) {
     // });
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    res.json(users);
+    res.json(users[0]);
   }); 
 
   // route to return all users (GET http://localhost:8080/api/users)
