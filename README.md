@@ -15,3 +15,5 @@ db.createUser(
     roles: [ "dbAdmin","userAdmin","dbOwner","read","readWrite" ]
   }
 )
+
+db.changeUserPassword("messiah", "India123")
