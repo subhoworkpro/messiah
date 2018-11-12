@@ -79,7 +79,7 @@ module.exports = function(apiRoutes) {
   // var config = require('../../config'); // get our config file
 
   // var CryptoJS = require("crypto-js");
-
+/*
   var campaigns = [{
       "id": 1,
       "name": "BAG MALANCHA PRY SCHOOL",
@@ -171,7 +171,7 @@ module.exports = function(apiRoutes) {
       "phone": "+91-692-593-9125"
     }
   ];
-
+*/
   // route to return all users (GET http://localhost:8080/api/users)
   apiRoutes.get('/campaigns', function(req, res) {
     res.header("Access-Control-Allow-Origin", "*");
