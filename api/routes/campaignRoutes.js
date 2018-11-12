@@ -72,6 +72,8 @@
 
 module.exports = function(apiRoutes) {
 
+  var Campaign   = require('../models/campaign'); // get our mongoose model
+
   // var User   = require('../models/user'); // get our mongoose model
   // var jwt    = require('jsonwebtoken'); // used to create, sign, and verify tokens
   // var config = require('../../config'); // get our config file
@@ -172,12 +174,13 @@ module.exports = function(apiRoutes) {
 
   // route to return all users (GET http://localhost:8080/api/users)
   apiRoutes.get('/campaigns', function(req, res) {
-    // User.find({}, function(err, users) {
-    //   res.json(users);
-    // });
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    res.json(campaigns);
+
+    Campaign.find({}, function(err, campaigns) {
+      res.json(campaigns);
+    });
+    // res.json(campaigns);
   }); 
 
 };
