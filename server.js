@@ -110,8 +110,8 @@ console.log(CryptoJS.AES.encrypt('my message', config.key).toString());
 //   }
 // });
 
-// var routes = require('./api/routes/galleryRoutes'); //importing route
-// routes(apiRoutes);
+var routes = require('./api/routes/galleryRoutes'); //importing route
+routes(apiRoutes);
 
 var userRoutes = require('./api/routes/userRoutes'); //importing route
 userRoutes(apiRoutes);

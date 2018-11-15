@@ -88,6 +88,13 @@ exports.upload_images_to_temp = function(req, res) {
 };
 
 
+exports.list_banner_images = function(req, res) {
+	var images = ["https://res.cloudinary.com/intellirio-consultancy-and-labs-llp/image/upload/v1542264628/s1_p9yuva.png","https://res.cloudinary.com/intellirio-consultancy-and-labs-llp/image/upload/v1542264627/s2_jzqlj1.png","https://res.cloudinary.com/intellirio-consultancy-and-labs-llp/image/upload/v1542264628/s3_j81kqp.png"];
+	res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+	res.json(images);
+};
+
 
 // exports.create_a_task = function(req, res) {
 //   var new_task = new Task(req.body);
