@@ -110,6 +110,8 @@ console.log(CryptoJS.AES.encrypt('my message', config.key).toString());
 //   }
 // });
 
+app.options('*', cors()); 
+
 var routes = require('./api/routes/galleryRoutes'); //importing route
 routes(apiRoutes);
 
@@ -140,6 +142,6 @@ app.use('/api', apiRoutes);
 
 
 app.listen(port);
-app.options('*', cors()); 
+// app.options('*', cors()); 
 
 console.log('Healthy Fling server started on: ' + port);
