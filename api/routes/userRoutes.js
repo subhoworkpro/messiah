@@ -1,72 +1,3 @@
-// 'use strict';
-
-// module.exports = function(apiRoutes) {
-
-//   var User   = require('../models/user'); // get our mongoose model
-//   var jwt    = require('jsonwebtoken'); // used to create, sign, and verify tokens
-//   var config = require('../../config'); // get our config file
-
-//   var CryptoJS = require("crypto-js");
-
-//   apiRoutes.get('/setup', function(req, res) {
-
-//     // create a sample user
-//     var admin = new User({ 
-//       name: 'Admin User', 
-//       password: 'password',
-//       admin: true 
-//     });
-
-//     // save the sample user
-//     admin.save(function(err) {
-//       if (err) throw err;
-
-//       console.log('User saved successfully');
-//       res.json({ success: true });
-//     });
-//   });
-
-//   apiRoutes.post('/authsetup', function(req, res) {
-
-//     var admintoken = req.body.admintoken
-
-//     if (admintoken == config.admintoken) {
-//       var name = req.body.name;
-//       var password = req.body.password;
-      
-//       if (name && password) {
-//         var admin = new User({ 
-//           name: name, 
-//           password: CryptoJS.AES.encrypt(password, config.key).toString(),
-//           admin: true 
-//         });
-
-//         // save the sample user
-//         admin.save(function(err) {
-//           if (err) throw err;
-
-//           console.log('User saved successfully');
-//           res.json({ success: true, message: 'User saved successfully' });
-//         });
-//       }else{
-//         res.json({ success: false, message: 'Unable to create user' });
-//       }
-
-//     }else{
-//       res.json({ success: false, message: 'Unable to create user' });
-//     }
-
-//   });
-
-//   // route to return all users (GET http://localhost:8080/api/users)
-//   apiRoutes.get('/users', function(req, res) {
-//     User.find({}, function(err, users) {
-//       res.json(users);
-//     });
-//   }); 
-
-// };
-
 
 'use strict';
 
@@ -113,6 +44,60 @@ module.exports = function(apiRoutes) {
     User.find({}, function(err, users) {
       res.json(users[0]);
     });
+    // res.header("Access-Control-Allow-Origin", "*");
+    // res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    // res.json(users[0]);
+  }); 
+
+  // route to return all users (GET http://localhost:8080/api/users)
+  apiRoutes.post('/users', function(req, res) {
+    console.log(req.body);
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    var new_user = new User({
+
+      name: req.body.name, 
+      password: req.body.password, 
+      username: req.body.username,
+      email: req.body.email,
+      phone: req.body.phone,
+      address: {
+          street: req.body.address.street,
+          city: req.body.address.city,
+          zipcode: req.body.address.zipcode
+      },
+      admin: false,
+      status: "active"
+    });
+
+    new_user.save(function(err, user){
+      if (err)
+        res.send(err);
+      
+      console.log('User saved successfully');
+      res.json(user);
+
+    });
+
+    // User.find({}, function(err, users) {
+    //   res.json(users[0]);
+    // });
+
+    //     // create a sample user
+//     var admin = new User({ 
+//       name: 'Admin User', 
+//       password: 'password',
+//       admin: true 
+//     });
+
+//     // save the sample user
+//     admin.save(function(err) {
+//       if (err) throw err;
+
+//       console.log('User saved successfully');
+//       res.json({ success: true });
+//     });
+//   });
     // res.header("Access-Control-Allow-Origin", "*");
     // res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     // res.json(users[0]);
