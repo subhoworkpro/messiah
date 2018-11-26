@@ -51,7 +51,6 @@ module.exports = function(apiRoutes) {
 
   // route to return all users (GET http://localhost:8080/api/users)
   apiRoutes.post('/users', function(req, res) {
-    console.log(req);
     console.log(req.body);
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
