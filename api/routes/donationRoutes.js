@@ -70,6 +70,8 @@
 
 'use strict';
 
+var request = require('request');
+
 module.exports = function(apiRoutes) {
 
   // var User   = require('../models/user'); // get our mongoose model
@@ -152,6 +154,21 @@ module.exports = function(apiRoutes) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     res.json(donations);
+  }); 
+
+  apiRoutes.get('/payment/:paymentId', function(req, res) {
+    // User.find({}, function(err, users) {
+    //   res.json(users);
+    // });
+
+    var paymentId = req.params.paymentId;
+
+    request('https://rzp_test_hii5NLEiVI3cgi:Egpk5YxyplHqC5GBEH7S8FGz@api.razorpay.com/v1/payments/'+paymentId, function (error, response, body) {
+      console.log('Response:', body);
+      res.header("Access-Control-Allow-Origin", "*");
+      res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+      res.json(JSON.parse(body));
+    });
   }); 
 
 };
